@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/justgage@1.4.0/justgage.css">
+    <script src="https://cdn.jsdelivr.net/npm/raphael@2.3.0/raphael.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/justgage@1.4.0/justgage.min.js"></script>
+
+</head>
+
+<body>
+    <div id="gaugeContainer"></div>
+
+    <script>
+        var gauge = new JustGage({
+            id: "gaugeContainer",  // ID of the container element
+            value: 65,            // The initial value of the gauge
+            min: 0,               // Minimum value
+            max: 100,             // Maximum value
+            title: "Percentage",  // Title of the gauge
+            label: "%",           // Label for the value
+            donut: true,          // Display as a donut or a complete circle
+            gaugeWidthScale: 0.6, // Width of the gauge relative to its container
+            counter: true         // Animate the gauge when rendered
+        });
+
+    </script>
+</body>
+
+</html>
